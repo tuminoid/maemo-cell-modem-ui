@@ -1,0 +1,6 @@
+INSTALL FROM SOURCES:
+---------------------
+
+dpkg-buildpackage -rfakeroot -us -uc -sa -D
+<cp to device>
+dpkg -i ../cell-modem-ui*_armel.deb

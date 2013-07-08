@@ -1,0 +1,39 @@
+# Cellular Modem Control Buttons el_GR translation file.
+# Copyright (C) 2010 Tuomo Tanskanen <tumi@tumi.fi>. All rights reserved.
+# This file is distributed under the same license as the cell-modem-ui package.
+
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.5\n"
+"Report-Msgid-Bugs-To: Tuomo Tanskanen <tumi@tumi.fi>\n"
+"POT-Creation-Date: 2010-02-19 14:31+0300\n\n"
+"PO-Revision-Date: 2010-02-19 14:31+0300\n\n"
+"Last-Translator: Christos Zamantzas <christos.zamantzas@gmail.com>\n"
+"Language-Team: Christos Zamantzas <christos.zamantzas@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: cell-modem-ui.xml
+msgid "cellmodemui_tablet_mode"
+msgstr "Λειτ. ως Ταμπλέτα"
+
+#: cell-modem-ui.xml
+msgid "cellmodemui_phone_mode"
+msgstr "Λειτ. ως Τηλέφωνο"
+
+#: debian/control
+msgid "cellmodemui_package_short_desc"
+msgstr "Προσθέτει τα πλήκτρα \"Λειτ. ως Ταμπλέτα\"/\"Λειτ. ως Τηλέφωνο\" στο μενού του πλήκτρου λειτουργίας."
+
+#: debian/control
+msgid "cellmodemui_package_long_desc"
+msgstr ""
+"Επιτρέπει την μεμονωμένη εναλλαγή του κυψελοειδούς μόντεμ σε "
+"ενεργοποιημένο ή απενεργοποιημένο χωρίς να χρειάζεται να μπει "
+"πλήρως σε λειτουργία χωρίς σύνδεση. Βολικό για τη διατήρηση "
+"ενεργοποιημένου του μόντεμ WLAN, αλλά με το τηλέφωνο κλειστό "
+"(π.χ. όταν σε πτήσεις, νοσοκομεία, κ.λπ.) ή για τη διατήρηση "
+"της μπαταρίας σε περιοχές με χαμηλή λήψη σήματος. "
+"Θα γίνει επανεκκίνηση του SystemUI στο τέλος της εγκατάστασης/απομάκρυνσης."
+

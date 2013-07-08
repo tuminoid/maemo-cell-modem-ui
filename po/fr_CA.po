@@ -1,0 +1,42 @@
+# Cellular Modem Control Buttons fr_CA translation file.
+# Copyright (C) 2010 Tuomo Tanskanen <tumi@tumi.fi>. All rights reserved.
+# This file is distributed under the same license as the cell-modem-ui package.
+
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.5\n"
+"Report-Msgid-Bugs-To: Tuomo Tanskanen <tumi@tumi.fi>\n"
+"POT-Creation-Date: 2010-02-19 14:31+0300\n\n"
+"PO-Revision-Date: 2010-02-19 14:31+0300\n\n"
+"Last-Translator: Tuomo Tanskanen <tumi@tumi.fi>\n"
+"Language-Team: Tuomo Tanskanen <tumi@tumi.fi>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: cell-modem-ui.xml
+#, fuzzy
+msgid "cellmodemui_tablet_mode"
+msgstr "Mode Tablette"
+
+#: cell-modem-ui.xml
+#, fuzzy
+msgid "cellmodemui_phone_mode"
+msgstr "Mode Téléphone"
+
+#: debian/control
+#, fuzzy
+msgid "cellmodemui_package_short_desc"
+msgstr "Ajoute des boutons pour les modes téléphone et tablette au menu du bouton d'allumage."
+
+#: debian/control
+#, fuzzy
+msgid "cellmodemui_package_long_desc"
+msgstr ""
+"Permet d'activer ou désactiver individuellement le modem cellulaire, "
+"sans aller jusqu'au mode Hors Ligne intégral. Pratique pour garder "
+"le Wifi activé mais le téléphone coupé (avion, hôpital...) ou pour "
+"économiser la batterie en cas de mauvaise réception. "
+"Redémarre SystemUI en fin d'installation/désinstallation."
+
+

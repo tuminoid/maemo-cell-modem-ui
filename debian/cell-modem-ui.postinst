@@ -1,0 +1,17 @@
+#!/bin/sh
+
+case "$1" in
+    configure)
+    if [ -e /etc/systemui/cell-modem-ui.xml ]; then
+      rm -f /etc/systemui/cell-modem-ui.xml
+    fi
+    ln -s /opt/cell-modem-ui/cell-modem-ui.xml /etc/systemui/cell-modem-ui.xml 
+
+    echo "Restarting systemui..."
+    killall systemui || true
+    ;;
+
+    *)
+    ;;
+esac
+

@@ -1,0 +1,77 @@
+cell-modem-ui (0.5.1-1) fremantle; urgency=low
+
+  * More localizations
+    - Danish da_DK (thanks zyborg)
+    - Revised en_GB, en_US (thanks zyborg)
+    - Revised fi_FI
+    - Greek el_GR (thanks Saturn)
+    - Bulgarian bg_BG (thanks todor_tsankov)
+  * Package short and long descriptions added to po files, 
+    makes them visible in Transifex
+  * Architecture limited to armel only
+  * Install dependency to busybox added due postinst scripts
+
+ -- Tuomo Tanskanen <tumi@tumi.fi>  Wed, 03 Mar 2010 07:26:40 +0200
+
+cell-modem-ui (0.5-1) fremantle; urgency=low
+
+  * Localizations added for
+    - Finnish
+    - Swedish (thanks Kll Mll)
+    - French (thanks fpp)
+    - Deutsch (thanks Corwin)
+    - Italian (thanks debernardis)
+    - Dutch (thanks danielronde)
+    - Spanish (thanks ikerrg)
+    - Polish (thanks Tomaszd)
+
+ -- Tuomo Tanskanen <tumi@tumi.fi>  Fri, 19 Feb 2010 18:11:26 +0200
+
+cell-modem-ui (0.4-2) fremantle; urgency=low
+
+  * Bugtracker to point to enter_bug.cgi, not buglist.cgi.
+
+ -- Tuomo Tanskanen <tumi@tumi.fi>  Fri, 29 Jan 2010 17:15:41 +0200
+
+cell-modem-ui (0.4-1) fremantle; urgency=low
+
+  * Added postinst and postrm scripts which restart systemui to avoid
+    user having to type killall systemui or rebooting to see buttons
+  * Enhanced description about the above
+  * Renamed buttons to Tablet Mode/Phone Mode buttons (idea by Tomasz)
+  * Changed icons that supposedly look like a tablet and a phone
+    to match new button titles
+
+ -- Tuomo Tanskanen <tumi@tumi.fi>  Fri, 29 Jan 2010 15:02:07 +0200
+
+cell-modem-ui (0.3-0) fremantle; urgency=low
+
+  * Fixed uninstall issue sometimes experienced
+  * Fixed XB-Maemo-Display-Name to be shorter
+  * Optified
+
+ -- Tuomo Tanskanen <tumi@tumi.fi>  Sun, 27 Dec 2009 18:44:35 +0200
+
+cell-modem-ui (0.2-2) fremantle; urgency=low
+
+  * Bugtracker added to debian/control
+  * Icon added for application via XB-Maemo-Icon-26
+  * Dependency corrected from osso-systemui to osso-systemuimenu
+  * Revised priorities some more to make it stick next to Phone
+
+ -- Tuomo Tanskanen <tumi@tumi.fi>  Tue, 22 Dec 2009 09:57:36 +0200
+
+cell-modem-ui (0.2-1) fremantle; urgency=low
+
+  * Revised priorities in XML
+  * Added icons for buttons
+  * Rewrote button texts
+  * Added disclaimer to control about requiring a reboot
+
+ -- Tuomo Tanskanen <tumi@tumi.fi>  Mon, 21 Dec 2009 01:12:48 +0200
+
+cell-modem-ui (0.1-1) fremantle; urgency=low
+
+  * Initial version
+
+ -- Tuomo Tanskanen <tumi@tumi.fi>  Sun, 20 Dec 2009 22:46:20 +0200

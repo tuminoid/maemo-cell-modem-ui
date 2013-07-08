@@ -1,0 +1,37 @@
+# Cellular Modem Control Buttons pl_PL translation file.
+# Copyright (C) 2010 Tuomo Tanskanen <tumi@tumi.fi>. All rights reserved.
+# This file is distributed under the same license as the cell-modem-ui package.
+
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.5\n"
+"Report-Msgid-Bugs-To: Tuomo Tanskanen <tumi@tumi.fi>\n"
+"POT-Creation-Date: 2010-02-19 14:31+0300\n\n"
+"PO-Revision-Date: 2010-02-19 14:31+0300\n\n"
+"Last-Translator: Tuomo Tanskanen <tumi@tumi.fi>\n"
+"Language-Team: Tuomo Tanskanen <tumi@tumi.fi>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: cell-modem-ui.xml
+msgid "cellmodemui_tablet_mode"
+msgstr "Tryb tabletu"
+
+#: cell-modem-ui.xml
+msgid "cellmodemui_phone_mode"
+msgstr "Tryb telefonu"
+
+#: debian/control
+msgid "cellmodemui_package_short_desc"
+msgstr "Dodaje przyciski Tryb telefonu/tabletu do menu przycisku zasilania."
+
+#: debian/control
+msgid "cellmodemui_package_long_desc"
+msgstr ""
+"Pozwala na włączanie/wyłączanie modemu telefonu bez przechodzenia "
+"do trybu offline. Przydatne, gdy chcemy mieć włączony WLAN bez "
+"funkcji telefonu (np. podczas lotów, w szpitalach) lub aby oszczędzać "
+"baterię, gdy zasięg jest słaby. "
+"Uruchamia SystemUI ponownie podczas instalacji/deinstalacji."
+

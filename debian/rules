@@ -1,0 +1,133 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+config.status: configure
+	dh_testdir
+
+configure: configure-stamp
+
+configure-stamp:
+#	libtoolize --automake
+#	aclocal-1.7 || aclocal
+#	autoconf
+#	autoheader
+#	automake-1.7 --add-missing --foreign || automake --add-missing> --foreign
+	touch configure-stamp
+
+
+build: build-stamp
+
+build-stamp:  config.status
+	dh_testdir
+	touch build-stamp
+
+clean:
+	dh_testdir
+	dh_testroot
+	rm -f build-stamp 
+	[ ! -f Makefile ] || $(MAKE) distclean
+ifneq "$(wildcard /usr/share/misc/config.sub)" ""
+	cp -f /usr/share/misc/config.sub config.sub
+endif
+ifneq "$(wildcard /usr/share/misc/config.guess)" ""
+	cp -f /usr/share/misc/config.guess config.guess
+endif
+	rm -f configure Makefile.in aclocal.m4 configure-stamp build-stamp config.guess config.sub depcomp install-sh ltmain.sh missing mkinstalldirs config.h.in
+	dh_clean 
+
+install: build
+	dh_testdir
+	dh_testroot
+	dh_clean -k 
+	dh_installdirs
+
+	# install our xml to /opt
+	mkdir -p $(CURDIR)/debian/tmp/opt/cell-modem-ui
+	cp $(CURDIR)/etc/systemui/*.xml $(CURDIR)/debian/tmp/opt/cell-modem-ui/
+
+	# install our translations by hand
+#	for i in en_GB en_US es_ES fi_FI fr_FR de_DE it_IT nl_NL pl_PL sv_SE; 
+#	do
+#		mkdir -p $(CURDIR)/debian/tmp/usr/share/locale/$i/LC_MESSAGES
+#		msgfmt $(CURDIR)/po/$i.po -o $(CURDIR)/debian/tmp/usr/share/locale/$i/LC_MESSAGES/cell-modem-ui.mo
+#	done
+
+	# why the above won't work?
+	mkdir -p $(CURDIR)/debian/tmp/usr/share/locale/fi_FI/LC_MESSAGES
+	msgfmt $(CURDIR)/po/fi_FI.po -o $(CURDIR)/debian/tmp/usr/share/locale/fi_FI/LC_MESSAGES/cell-modem-ui.mo
+
+	mkdir -p $(CURDIR)/debian/tmp/usr/share/locale/sv_SE/LC_MESSAGES
+	msgfmt $(CURDIR)/po/sv_SE.po -o $(CURDIR)/debian/tmp/usr/share/locale/sv_SE/LC_MESSAGES/cell-modem-ui.mo
+
+	mkdir -p $(CURDIR)/debian/tmp/usr/share/locale/es_ES/LC_MESSAGES
+	msgfmt $(CURDIR)/po/es_ES.po -o $(CURDIR)/debian/tmp/usr/share/locale/es_ES/LC_MESSAGES/cell-modem-ui.mo
+
+	mkdir -p $(CURDIR)/debian/tmp/usr/share/locale/de_DE/LC_MESSAGES
+	msgfmt $(CURDIR)/po/de_DE.po -o $(CURDIR)/debian/tmp/usr/share/locale/de_DE/LC_MESSAGES/cell-modem-ui.mo
+
+	mkdir -p $(CURDIR)/debian/tmp/usr/share/locale/fr_FR/LC_MESSAGES
+	msgfmt $(CURDIR)/po/fr_FR.po -o $(CURDIR)/debian/tmp/usr/share/locale/fr_FR/LC_MESSAGES/cell-modem-ui.mo
+
+	mkdir -p $(CURDIR)/debian/tmp/usr/share/locale/it_IT/LC_MESSAGES
+	msgfmt $(CURDIR)/po/it_IT.po -o $(CURDIR)/debian/tmp/usr/share/locale/it_IT/LC_MESSAGES/cell-modem-ui.mo
+
+	mkdir -p $(CURDIR)/debian/tmp/usr/share/locale/nl_NL/LC_MESSAGES
+	msgfmt $(CURDIR)/po/nl_NL.po -o $(CURDIR)/debian/tmp/usr/share/locale/nl_NL/LC_MESSAGES/cell-modem-ui.mo
+
+	mkdir -p $(CURDIR)/debian/tmp/usr/share/locale/pl_PL/LC_MESSAGES
+	msgfmt $(CURDIR)/po/pl_PL.po -o $(CURDIR)/debian/tmp/usr/share/locale/pl_PL/LC_MESSAGES/cell-modem-ui.mo
+
+	mkdir -p $(CURDIR)/debian/tmp/usr/share/locale/en_GB/LC_MESSAGES
+	msgfmt $(CURDIR)/po/en_GB.po -o $(CURDIR)/debian/tmp/usr/share/locale/en_GB/LC_MESSAGES/cell-modem-ui.mo
+
+	mkdir -p $(CURDIR)/debian/tmp/usr/share/locale/en_US/LC_MESSAGES
+	msgfmt $(CURDIR)/po/en_US.po -o $(CURDIR)/debian/tmp/usr/share/locale/en_US/LC_MESSAGES/cell-modem-ui.mo
+
+	mkdir -p $(CURDIR)/debian/tmp/usr/share/locale/ru_RU/LC_MESSAGES
+	msgfmt $(CURDIR)/po/ru_RU.po -o $(CURDIR)/debian/tmp/usr/share/locale/ru_RU/LC_MESSAGES/cell-modem-ui.mo
+
+	mkdir -p $(CURDIR)/debian/tmp/usr/share/locale/fr_CA/LC_MESSAGES
+	msgfmt $(CURDIR)/po/fr_CA.po -o $(CURDIR)/debian/tmp/usr/share/locale/fr_CA/LC_MESSAGES/cell-modem-ui.mo
+
+	mkdir -p $(CURDIR)/debian/tmp/usr/share/locale/da_DK/LC_MESSAGES
+	msgfmt $(CURDIR)/po/da_DK.po -o $(CURDIR)/debian/tmp/usr/share/locale/da_DK/LC_MESSAGES/cell-modem-ui.mo
+
+	mkdir -p $(CURDIR)/debian/tmp/usr/share/locale/no_NO/LC_MESSAGES
+	msgfmt $(CURDIR)/po/no_NO.po -o $(CURDIR)/debian/tmp/usr/share/locale/no_NO/LC_MESSAGES/cell-modem-ui.mo
+
+	mkdir -p $(CURDIR)/debian/tmp/usr/share/locale/es_MX/LC_MESSAGES
+	msgfmt $(CURDIR)/po/es_MX.po -o $(CURDIR)/debian/tmp/usr/share/locale/es_MX/LC_MESSAGES/cell-modem-ui.mo
+
+	mkdir -p $(CURDIR)/debian/tmp/usr/share/locale/cs_CZ/LC_MESSAGES
+	msgfmt $(CURDIR)/po/cs_CZ.po -o $(CURDIR)/debian/tmp/usr/share/locale/cs_CZ/LC_MESSAGES/cell-modem-ui.mo
+
+	mkdir -p $(CURDIR)/debian/tmp/usr/share/locale/pt_PT/LC_MESSAGES
+	msgfmt $(CURDIR)/po/pt_PT.po -o $(CURDIR)/debian/tmp/usr/share/locale/pt_PT/LC_MESSAGES/cell-modem-ui.mo
+
+	mkdir -p $(CURDIR)/debian/tmp/usr/share/locale/el_GR/LC_MESSAGES
+	msgfmt $(CURDIR)/po/el_GR.po -o $(CURDIR)/debian/tmp/usr/share/locale/el_GR/LC_MESSAGES/cell-modem-ui.mo
+
+	mkdir -p $(CURDIR)/debian/tmp/usr/share/locale/bg_BG/LC_MESSAGES
+	msgfmt $(CURDIR)/po/bg_BG.po -o $(CURDIR)/debian/tmp/usr/share/locale/bg_BG/LC_MESSAGES/cell-modem-ui.mo
+
+binary-indep: build install
+
+binary-arch: build install
+	dh_testdir
+	dh_testroot
+	dh_installchangelogs
+	dh_installdocs
+	dh_install -v --sourcedir=debian/tmp
+	dh_link
+	dh_strip --dbg-package=cell-modem-ui
+	dh_compress
+	dh_fixperms
+	dh_makeshlibs -V
+	dh_installdeb
+	dh_shlibdeps
+	dh_gencontrol
+	dh_md5sums
+	dh_builddeb
+
+binary: binary-indep binary-arch
+.PHONY: build clean binary-indep binary-arch binary install 

@@ -1,0 +1,45 @@
+# Cellular Modem Control Buttons es_MX translation file.
+# Copyright (C) 2010 Tuomo Tanskanen <tumi@tumi.fi>. All rights reserved.
+# This file is distributed under the same license as the cell-modem-ui package.
+
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.5\n"
+"Report-Msgid-Bugs-To: Tuomo Tanskanen <tumi@tumi.fi>\n"
+"POT-Creation-Date: 2010-02-19 14:31+0300\n\n"
+"PO-Revision-Date: 2010-02-19 14:31+0300\n\n"
+"Last-Translator: Tuomo Tanskanen <tumi@tumi.fi>\n"
+"Language-Team: Tuomo Tanskanen <tumi@tumi.fi>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: cell-modem-ui.xml
+#, fuzzy
+msgid "cellmodemui_tablet_mode"
+msgstr "Modo TabletPC"
+
+#: cell-modem-ui.xml
+#, fuzzy
+msgid "cellmodemui_phone_mode"
+msgstr "Modo Teléfono"
+
+#: debian/control
+#, fuzzy
+msgid "cellmodemui_package_short_desc"
+msgstr "Añade las opciones de Modo Teléfono/Modo TabletPC al menú de la tecla de encendido."
+
+#: debian/control
+#, fuzzy
+msgid "cellmodemui_package_long_desc"
+msgstr ""
+"Añade las opciones de Modo Teléfono/Modo TabletPC al menú de la tecla de encendido. "
+"Permite activar o desactivar la cobertura de móvil (modo fuera de "
+"línea) sin desactivar también el WiFi y el Bluetooth como sucede "
+"en el \"Modo sin conexión\". Es útil para tener el WiFi o el Bluetooth "
+"activado con el teléfono desactivado (como por ejemplo en aviones, "
+"hospitales, etc.) o para ahorrar batería en zonas de mala cobertura "
+"de móvil. "
+"La interfaz de usuario de sistema se reinicia al finalizar la "
+"instalación o desinstalación de la aplicación."
+

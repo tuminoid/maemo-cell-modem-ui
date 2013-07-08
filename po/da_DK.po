@@ -1,0 +1,38 @@
+# Cellular Modem Control Buttons da_DK translation file.
+# Copyright (C) 2010 Tuomo Tanskanen <tumi@tumi.fi>. All rights reserved.
+# This file is distributed under the same license as the cell-modem-ui package.
+
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.5\n"
+"Report-Msgid-Bugs-To: Tuomo Tanskanen <tumi@tumi.fi>\n"
+"POT-Creation-Date: 2010-02-19 14:31+0300\n\n"
+"PO-Revision-Date: 2010-02-19 14:31+0300\n\n"
+"Last-Translator: Tuomo Tanskanen <tumi@tumi.fi>\n"
+"Language-Team: Tuomo Tanskanen <tumi@tumi.fi>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: cell-modem-ui.xml
+msgid "cellmodemui_tablet_mode"
+msgstr "Lommecomputer"
+
+#: cell-modem-ui.xml
+msgid "cellmodemui_phone_mode"
+msgstr "Telefon"
+
+#: debian/control
+msgid "cellmodemui_package_short_desc"
+msgstr "Føjer knapperne Telefon-/Lommecomputer(tilstand) til tænd/sluk-knappens menu."
+
+#: debian/control
+msgid "cellmodemui_package_long_desc"
+msgstr ""
+"Aktiverer muligheden for at slå telefonmodemet til/fra, uden "
+"at skifte til offline-tilstand. Funktionen er især anvendelig, "
+"hvis du vil have WLAN slået til, men telefonen slået fra "
+"(f.eks. i fly, på hospitaler osv.), eller for at spare på "
+"batteriet på steder med dårlige modtageforhold. "
+"Genstarter systembrugerfladen umiddelbart efter installation/afinstallation."
+

@@ -1,0 +1,10 @@
+cell-modem-ui:
+--------------
+Installs a XML-file to /etc/systemui/ for controlling cellular modem.
+
+
+
+
+Updating icon in debian/control:
+	uuencode -m icon.png icon.png > icon.png.en
+

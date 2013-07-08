@@ -1,0 +1,147 @@
+Source: cell-modem-ui
+Section: user/system
+Priority: optional
+Maintainer: Tuomo Tanskanen <tumi@tumi.fi>
+Build-Depends: debhelper (>= 4.1.0), gettext (>= 0.17)
+Standards-Version: 3.8.0
+
+Package: cell-modem-ui
+Section: user/system
+Architecture: armel
+Depends: ${shlibs:Depends}, osso-systemui-powerkeymenu (>= 0.2.0.0), busybox-symlinks-psmisc, busybox
+XB-Maemo-Display-Name: Cellular Modem Control Buttons
+Description: Adds Tablet Mode/Phone Mode buttons to powerkey menu.
+ Enables switching the cellular modem on or off, without going 
+ into Offline mode. Handy for having WLAN enabled, but phone disabled  
+ (e.g. flights, hospitals) or to conserve battery in areas with 
+ low signal reception. 
+ Restarts SystemUI at the end of the installation/removal.
+XB-Description-fi_FI: Lisää virtanappivalikkoon painikkeen Tablet/Puhelin-tilojen välillä vaihtamiseen.
+ Mahdollistaa puhelinmodeemin sammuttamisen erikseen riippumatta
+ WiFistä tai Bluetoothista, tarvitsematta mennä kokonaan Offline-
+ moodiin. Kätevä esim. lentokoneissa tai sairaaloissa, ja akun 
+ säästämiseen huonon signaalin alueilla.
+ Automaattisesti uudelleenkäynnistää SystemUI:n asennuksen/poiston 
+ jälkeen.
+ (Translation by tuminoid)
+XB-Description-de_DE: Erweitert das Statusmenü um Tablet-Modus/Telefon-Modus Schaltflächen.
+ Ermöglicht, das Mobilfunk-Modem einzeln an- und abzuschalten, ohne den 
+ Offline-Modus zu verwenden. Dies ist nützlich, um WLAN eingeschaltet 
+ zu lassen, das Mobilfunk-Modem aber auszuschalten (z.B. auf Flügen 
+ oder im Krankenhaus) oder um in Gebieten mit schlechtem Empfang 
+ Energie zu sparen. 
+ Startet SystemUI am Ende der Installation oder Deinstallation neu.
+ (Translation by Corwin)
+XB-Description-nl_NL: Voegt Tablet Modus/Telefoon Modus knoppen toe aan het statusmenu.
+ Maakt het mogelijk om de telefoonverbinding aan of uit te zetten, 
+ zonder volledig naar offline mode te gaan. Dit is handig wanneer 
+ de telefoon uit moet (vliegtuig/ziekenhuis) maar WLAN niet of om 
+ de batterij te sparen als de telefoon ontvangst slecht is. 
+ SystemUI wordt herstart aan het einde van de installatie/de-installatie. 
+ (Translation by danielronde)
+XB-Description-fr_FR: Ajoute des boutons pour les modes téléphone et tablette au menu du bouton d'allumage.
+ Permet d'activer ou désactiver individuellement le modem cellulaire, 
+ sans aller jusqu'au mode Hors Ligne intégral. Pratique pour garder 
+ le Wifi activé mais le téléphone coupé (avion, hôpital...) ou pour 
+ économiser la batterie en cas de mauvaise réception. 
+ Redémarre SystemUI en fin d'installation/désinstallation. 
+ (Translation by fpp)
+XB-Description-fr_CA: Ajoute des boutons pour les modes téléphone et tablette au menu du bouton d'allumage.
+ Permet d'activer ou désactiver individuellement le modem cellulaire, 
+ sans aller jusqu'au mode Hors Ligne intégral. Pratique pour garder 
+ le Wifi activé mais le téléphone coupé (avion, hôpital...) ou pour 
+ économiser la batterie en cas de mauvaise réception. 
+ Redémarre SystemUI en fin d'installation/désinstallation. 
+ (Translation by fpp)
+XB-Description-sv_SE: Lägger till knapparna Telefonläge/Pekdatorläge till strömbrytarmenyn.
+ Gör det möjligt att slå på och av mobilnätsmodemet separat utan 
+ att behöva gå till det fullständiga offlineläget. Praktiskt för 
+ att ha WLAN aktiverat men telefonen avstängd (t.ex. flygplan, sjukhus) 
+ eller för att spara batteri i områden med låg signalmottagning. 
+ Startar om SystemUI i slutet av installeringen/borttagningen.
+ (Translation by Kll Mll)
+XB-Description-da_DK: Føjer knapperne Telefon-/Lommecomputer(tilstand) til tænd/sluk-knappens menu.
+ Aktiverer muligheden for at slå telefonmodemet til/fra, uden 
+ at skifte til offline-tilstand. Funktionen er især anvendelig, 
+ hvis du vil have WLAN slået til, men telefonen slået fra 
+ (f.eks. i fly, på hospitaler osv.), eller for at spare på 
+ batteriet på steder med dårlige modtageforhold. 
+ Genstarter systembrugerfladen umiddelbart efter installation/afinstallation.
+ (Translation by zyborg)
+XB-Description-es_ES: Añade las opciones de Modo Teléfono/Modo TabletPC al menú de la tecla de encendido.
+ Permite activar o desactivar la cobertura de móvil (modo fuera de 
+ línea) sin desactivar también el WiFi y el Bluetooth como sucede 
+ en el "Modo sin conexión". Es útil para tener el WiFi o el Bluetooth 
+ activado con el teléfono desactivado (como por ejemplo en aviones, 
+ hospitales, etc.) o para ahorrar batería en zonas de mala cobertura 
+ de móvil. 
+ La interfaz de usuario de sistema se reinicia al finalizar la 
+ instalación o desinstalación de la aplicación.
+ (Translation by ikerrg)
+XB-Description-es_MX: Añade las opciones de Modo Teléfono/Modo TabletPC al menú de la tecla de encendido.
+ Permite activar o desactivar la cobertura de móvil (modo fuera de 
+ línea) sin desactivar también el WiFi y el Bluetooth como sucede 
+ en el "Modo sin conexión". Es útil para tener el WiFi o el Bluetooth 
+ activado con el teléfono desactivado (como por ejemplo en aviones, 
+ hospitales, etc.) o para ahorrar batería en zonas de mala cobertura 
+ de móvil. 
+ La interfaz de usuario de sistema se reinicia al finalizar la 
+ instalación o desinstalación de la aplicación.
+ (Translation by ikerrg)
+XB-Description-it_IT: Aggiunge al menù del tasto di accensione un bottone per scegliere tra modalità cellulare o tablet pc.
+ Consente di accendere o spegnere il solo cellulare senza usare la 
+ modalità "non in linea". Serve per lasciare accesi il wi-fi ed il 
+ bluetooth tenendo spento il cellulare (es. in aereo, in ospedale) 
+ o per risparmiare la batteria in zone con poco campo. 
+ Alla fine dell'installazione o della rimozione del programma, fa 
+ ripartire l'interfaccia utente del sistema. 
+ (Translation by debernardis)
+XB-Description-pl_PL: Dodaje przyciski Tryb telefonu/tabletu do menu przycisku zasilania.
+ Pozwala na włączanie/wyłączanie modemu telefonu bez przechodzenia 
+ do trybu offline. Przydatne, gdy chcemy mieć włączony WLAN bez 
+ funkcji telefonu (np. podczas lotów, w szpitalach) lub aby oszczędzać 
+ baterię, gdy zasięg jest słaby. 
+ Uruchamia SystemUI ponownie podczas instalacji/deinstalacji. 
+ (Translation by Tomaszd)
+XB-Description-el_GR: Προσθέτει τα πλήκτρα "Λειτ. ως Ταμπλέτα"/"Λειτ. ως Τηλέφωνο" στο μενού του πλήκτρου λειτουργίας.
+ Επιτρέπει την μεμονωμένη εναλλαγή του κυψελοειδούς μόντεμ σε 
+ ενεργοποιημένο ή απενεργοποιημένο χωρίς να χρειάζεται να μπει 
+ πλήρως σε λειτουργία χωρίς σύνδεση. Βολικό για τη διατήρηση 
+ ενεργοποιημένου του μόντεμ WLAN, αλλά με το τηλέφωνο κλειστό 
+ (π.χ. όταν σε πτήσεις, νοσοκομεία, κ.λπ.) ή για τη διατήρηση 
+ της μπαταρίας σε περιοχές με χαμηλή λήψη σήματος. 
+ Θα γίνει επανεκκίνηση του SystemUI στο τέλος της εγκατάστασης/απομάκρυνσης.
+ (Translation by Saturn)
+XB-Description-bg_BG: Добавя режимите таблет/телефон в менюто на бутона за изключване.
+ Добавя възможност за индивидуално изключване на мобилната(GSM/3G) 
+ комуникация, без изцяло да се преминава в режим без комуникации. 
+ Удобно за оставяне на включена WLAN комуникацията, но изключване 
+ на телефона (напр. в болници, по време на полет) или за запазване 
+ на батерията в места със слаб обхват. 
+ След инсталиране/премахване рестартира SustemUI. 
+ (Translation by todor_tsankov)
+XSBC-Bugtracker: https://bugs.maemo.org/enter_bug.cgi?product=cell-modem-control
+XB-Maemo-Icon-26:
+ iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c
+ 6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0
+ SU1FB9oBHQ0bN/kxzt0AAAM3SURBVGhD3Zk/aBNhGIefxLRJGms9RAcRwToU
+ xUEICuJgl04iCE4u4hTXgoOjderiIB0ECwXHDg6uIpUuTlpwEkSE2IqlpY3p
+ /ftyyd3FQS5NS3Lf9b7LWfpAIJf83tz7y/t+73eXZCqVyhjwGriLOnXgxfz8
+ /DOZMCmywAuSSR7gJDBTqVSeyoRJkQMeAvw89YDa8Rvhagmn9SXO/XkDMA2k
+ UoUsgJspsl28RttzlR6bpVvB557sf8pkyQVPfM8N0x1acgC5tsB3WwC8vP2V
+ 0dFRSqUSIyMjFItF8vk8Q0NDZDIZXNfFcRyEEJimia7r1Ot1pt9fDT3RoOhU
+ oK1YAdX4uOy2kKuWgGp8XBJbA6rxcelqoVaYTopqfFyOTgupLkLV+LgkX4Fj
+ 4bqk6VrEaj3cif9fBlRbQDU+Ll0tFFQg00cazm58uvSowFAfaTiHoAJqBlSH
+ QFyO0E6s2MOq8XE5OhVQnSKq8XE5SvvAvwTuPPnRV3wYSexSYj9LS0up/LTS
+ NYX6t8DNV9f2HH989KmPcpeFhYUZmUaV4eHheFMoinZ5eVkmUaZQKMTbB6Jo
+ NU2TSWJhGAau6yKEYGtra3AVGJSBWq3G5uYmnucBEfeBD/ff9X0vDXzfp9Fo
+ YNs29Xq9kzwkuBMPAt/3EUJg2zbtdrunJgd8Aa5eOrvD19VST1FULp+3ANB1
+ XaIMx/M8LMvCcZy+iQfkgBng7fWJHa5P7ISKo1Kr1WSSngSJNxoNmbTDsZWV
+ lW/lcrkKTAKFcHk4nuexvr6OaZoy6R6azSa6rmOaJq7kvkLX9T2ayPePc3Nz
+ nxcXF8vVanXP6+Pj470DIuA4DrZt02rJx3LA2toaQojOcWcRp4kQAsuy8H1f
+ JpWSmoHuUZhE4gEDNxBlFKowMANxJkocEjfQarUQQgw88YDEDDSbTSzLOtBE
+ SQJlA8G3nXbiAVmZYD9+4QTOhRvYDLOxsYFhGP8teThgBbLZLIZ2EavyBmYn
+ 4XeV7e1tWVii7P+yDmLAyefzlH59x5qdhNUvAKkb6EbTtOiXElNTU8/HxsYe
+ G4Yhk6ZKZAPAFU3T7hUKhbJMmCYHMQBwhtT/gwnnL2WG5L7Kf2NeAAAAAElF
+ TkSuQmCC
+ ====
